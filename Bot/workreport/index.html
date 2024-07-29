@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyLink Bot-工作报告撰写助手</title>
+    <link rel="icon" href="logo.png">
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: rgb(167, 201, 201);
+      }
+      .squaere {
+                border-top: rgba(130, 130, 130, 1) solid 4px !important;
+                border-bottom: rgba(120, 120, 120, 1) solid 6px !important;
+                border-left: rgba(117, 117, 117, 1) solid 5px !important;
+                border-right: rgba(120, 120, 120, 1) solid 5px !important;
+                border-radius: 15px 15px 15px 15px;
+                outline: rgba(186, 186, 186, 1) dashed 2px;
+                box-shadow: 3px 3px 7px 5px rgba(232, 232, 232, 0.09) inset;
+                margin: auto auto auto auto;
+                width: 371px !important;
+                height: 382px !important;
+                float: none;
+                cursor: move;
+                color: rgb(0, 0, 0);
+                font-style: normal;
+                font-size: 30px;
+                font-weight: bold;
+                line-height: auto;
+                text-align: center;
+            }
+            .square_button{
+              background-color: rgb(0, 103, 184);
+              color:white;
+              height: 35px;
+              width: 180px;
+              border: none;
+              font-size: 15px;
+              font-weight: bold;
+              cursor: pointer;
+            }
+            .unopen_square_button{
+              background-color: rgb(110, 110, 110);
+              color:white;
+              height: 35px;
+              width: 180px;
+              border: none;
+              font-size: 15px;
+              font-weight: bold;
+              cursor: not-allowed;
+            }
+    </style>
+</head>
+<script src="./script.js" ></script>
+
+<body>
+  <div id="bot">
+    <div id="sa" class="squaere">
+      <h3>生成工作报告</h3>
+      <input type="text" placeholder="输入主题" id="subject"/><br>
+      <input type="text" placeholder="如何称呼您" id="user"/><br>
+      <input type="submit" value="确认生成" onclick="sendchat()" class="square_button"/>
+    </div>
+  </div> 
+  
+
+</body>
+<footer>
+  <p>基于h的EasyLink模型制作，最终解释权归h所有。</p>
+  <p>™hecencen&nbsp;2023~2024 &nbsp;&nbsp;保留所有权利</p>
+</footer>
+</html>
